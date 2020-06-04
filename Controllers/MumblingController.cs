@@ -11,7 +11,7 @@ namespace KatasAPI.Controllers
     {
         [HttpGet("{mumbling}")]
 
-        public string Mumble(string mumbling)
+        public string Mumbler(string mumbling)
         {
             var answer = "";
             var count = 0;

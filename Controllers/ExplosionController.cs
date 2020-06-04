@@ -9,9 +9,9 @@ namespace KatasAPI.Controllers
     [Route("[controller]")]
     public class ExplosionController : ControllerBase
     {
-        [HttpGet("{explosions}")]
+        [HttpGet("{explosion}")]
 
-        public string Explosions(string explosion)
+        public string Exploding(string explosion)
         {
             var answer = "";
 
@@ -21,7 +21,7 @@ namespace KatasAPI.Controllers
 
                 for (var n = 0; n < number; n++)
                 {
-                    answer = answer + character;
+                    answer += character;
                 }
             }
             return answer;
