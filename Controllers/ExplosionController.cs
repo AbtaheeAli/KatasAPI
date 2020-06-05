@@ -5,12 +5,10 @@ using Microsoft.AspNetCore.Mvc;
 namespace KatasAPI.Controllers
 {
     [ApiController]
-
     [Route("[controller]")]
     public class ExplosionController : ControllerBase
     {
         [HttpGet("{explosion}")]
-
         public string Exploding(string explosion)
         {
             var answer = "";
@@ -24,6 +22,7 @@ namespace KatasAPI.Controllers
                     answer += character;
                 }
             }
+
             return answer;
         }
     }
